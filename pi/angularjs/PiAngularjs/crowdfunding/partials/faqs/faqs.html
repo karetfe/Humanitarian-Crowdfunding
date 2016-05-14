@@ -1,0 +1,44 @@
+
+  <section class="header-bottom">
+    <article>
+      <div class="container"><h1>frequently asked questions</h1></div>
+    </article>
+  </section>
+  <!-- ************************ Breadcrumbs ************************ -->
+  <section class="breadcrumb">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+            <li><a ui-sref="home">Home</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li>Faqs</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+
+<div class="row">
+    <div class="col-md-1"></div>
+  <div class="col-md-7"><div class="accordion-group" ng-controller="FaqsCtrl">
+                  <div class="panel panel-primary" ng-repeat="post in postings">
+                        <div class="panel-heading">{{ post.question }}</div>
+                        <div class="panel-body">{{ post.response }}</div>
+                </div>
+              </div></div>
+  <div class="col-md-4">      <div class="accordion-group" ng-controller="FaqsCtrl">
+         
+              
+        
+       <label><h4>you  can send your question here</h4></label><br>
+		<input type="text" ng-model="post.question" />    
+        <button class="btn btn-success"  ng-click="createPost()">send Now </button>
+    
+              </div></div>
+</div>
+
+       
+
+  

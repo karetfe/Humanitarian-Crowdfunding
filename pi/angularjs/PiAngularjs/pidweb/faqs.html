@@ -1,0 +1,263 @@
+
+<!DOCTYPE HTML>
+<html ng-app="app">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="Fundz HTML5 Template">
+<meta name="description" content="Fundz is a HTML5 Responsive Crowdfunding Template">
+<meta name="author" content="stackthemes.net">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FAQs | Fundz - Crowdfunding HTML5 Template</title> 
+
+<!-- ************************ CSS Files ************************ -->
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+<!-- Basic Stylesheets -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/custom-style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+<!-- Progressbar CSS -->
+<link rel="stylesheet" href="assets/js/pieprogress/css/rainbow.css">
+<link rel="stylesheet" href="assets/js/pieprogress/css/progress.css">
+
+<!-- Revolution Slider CSS -->
+<link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/rs-plugin/css/settings.css" media="screen" />
+
+<!-- Carousels CSS -->
+<link href="assets/js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+<!-- Google Fonts & Font-Awesome -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/icons.css">
+
+<!-- Your Custom Styles -->
+<link rel="stylesheet" type="text/css" href="assets/css/my-styles.css">
+
+<!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="wrapper"> 
+  <!-- ************************ Header ************************ -->
+  <header>
+    <div class="container">
+      <div id="logo">
+        <a href="index.html"><img src="assets/images/med.png" alt="Fundz" /></a>
+        <button type="button" class="collapsed" id="navbar-toggle"><i class="icon fa fa-bars"></i></button>
+      </div>
+      <div class="nav-header-right">
+        <nav class="main-nav">
+          <ul>
+            <ul>
+              
+           
+            
+               <li><a href="start.html">Projects <span>send your idea</span></a></li>
+              <li><a href="eventList.html">Event <span>join our events</span></a></li>
+              
+              <li><a href="faqs.html">Faq'S <span> Any question?</span></a></li>
+            <li><a href="#">Blog <span>Articles & succes storie</span></a>
+              <ul>
+                <li><a href="faqs.html">Faq's</a></li>
+                <li><a href="success-stories.html">Succes stories </a></li>
+                <li><a href="blog-single.html">Article</a></li>
+                
+              </ul>
+            </li>
+              
+            <li><a href="about.html">About Us <span>what is fundz?</span></a></li>
+          </ul>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="header-right-btns">
+            <ul>
+              <li><a href="#" class="btn btn-4 blue">Donate</a></li>
+            </ul>
+          </div>
+          <div class="search-box border-right">
+            <form method="get" action="index.html">
+              <input type="text" value="Search Here" name="s" id="keyword">
+              <span class="icon fa fa-search transition-color" title="Search"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <script type="text/javascript">
+function myFunction() {
+    alert("Your question was received, we shall answer you in them in brief deadlines");
+}
+</script>
+      
+  </header>
+  
+  <!-- ************************ Header Bottom | Page Title ************************ -->
+  <section class="header-bottom">
+    <article>
+      <div class="container"><h1>frequently asked questions</h1></div>
+    </article>
+  </section>
+  <!-- ************************ Breadcrumbs ************************ -->
+  <section class="breadcrumb">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+            <li><a href="index.html">Home</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+        <!--<div class="col-lg-6 align-right sub-menu social">
+          <ul>
+            <li><i class="fa fa-map-marker"></i> &nbsp; Birdcage Walk, London, UK &nbsp;&nbsp;</li>
+            <li>&nbsp;&nbsp;<a href="#"><span class="icon-community"></span> &nbsp; Community</a></li>
+          </ul>
+        </div>-->
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Page Content ************************ -->
+        <div id="content">
+  <section class="gray">
+    <article class="container faqpage">
+     
+        
+      <div class="row">
+          <div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8"> 
+      <div class="accordion" id="accordion-faq">
+              <div class="accordion-group" ng-controller="PostingsCtrlGet">
+                  <div class="panel panel-primary" ng-repeat="post in postings">
+                        <div class="panel-heading">{{ post.question }}</div>
+                        <div class="panel-body">{{ post.response }}</div>
+                </div>
+              </div>
+            </div>
+              </div>
+  <div class="col-xs-6 col-md-4">
+              
+                       <div class="row">
+        
+          <div class="accordion" id="accordion-faq">
+          
+            <div class="accordion-group" ng-controller="PostingsCtrlAdd">
+         
+              
+        
+       <label>you  can send your question here</label>
+		<input type="text" ng-model="post.question" />    
+        <button class="btn btn-success" onclick="myFunction()" ng-click="createPost()">send Now </button>
+    
+              </div>
+            </div>
+        </div>
+              </div>
+</div>
+         
+        </div>
+               
+      
+    </article>
+  </section>
+    </div>
+    <div id="editor"></div>
+<button id="cmd">generate PDF</button>
+  
+  <!-- ************************ Send your idea ************************ -->
+  
+  <section class="send-us">
+    <article class="container">
+      <h3>Have a Community Project in Need of Funding?</h3>
+      <a href="start.html" class="btn btn-3 green">Send to us</a>
+    </article>
+  </section>
+  
+  <!-- ************************ Footer ************************ -->
+  
+  <footer>
+    <!-- ************************ Footer Links ************************ -->
+
+  
+      
+    
+    <!-- ************************ CopyRights & NewsLetter SignUp ************************ -->
+        
+    <div class="copyrights">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 copyright-text">
+            &copy; Yeddna | All rights reserved.
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+</div>
+
+<!-- ************************ jQuery Scripts ************************ -->
+
+<!--  jQuery (necessary for JavaScript plugins) -->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/migrate.js"></script>
+
+<!-- Bootstrap Javascript -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<!-- Progressbar -->
+<script type="text/javascript" src="assets/js/pieprogress/scripts/rainbow.min.js"></script>
+<script type="text/javascript" src="assets/js/pieprogress/scripts/jquery-asPieProgress.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Carousels js -->
+<script type="text/javascript" src="assets/js/bxslider/jquery.bxslider.min.js"></script>
+
+<!-- Google Maps -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.exp"></script>
+<script type="text/javascript" src="assets/js/maps/scripts/jquery.gmap.min.js"></script>
+
+<!--Custom Scroll Bar -->
+<script type="text/javascript" src="assets/js/jquery.scroll.js"></script>
+
+<!-- Grayscale Images -->
+<script type="text/javascript" src="assets/js/jquery.hoverizr.min.js"></script>
+
+<!-- Custom Settings -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<!-- Jquery Plugins - (For Selectbox, EventCountDown) -->
+<script type="text/javascript" src="assets/js/plugin.js"></script>
+
+<!-- Event Countdown -->
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+
+<!-- Retina Script -->
+<script type="text/javascript" src="assets/js/retina.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-resource.min.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script src="js/modules.js"></script>
+    <script src="js/controllers.js"></script>
+       <script src="pdf/pdf2.js"></script>
+</body>
+</html>

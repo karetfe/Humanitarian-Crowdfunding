@@ -1,0 +1,15 @@
+
+<table class="table movietable">
+    <tr>
+        <td><h3>All question</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="faq in faqs">
+        <td>{{faq.question}}</td><td>{{faq.response}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewFaq({id:faq._id})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteFaq(faq)">Delete</a>
+        </td>
+    </tr>
+</table>
+<a ui-sref="newFaq" class="btn-primary btn-lg nodecoration">Add Question</a>

@@ -1,0 +1,18 @@
+
+<table class="table movietable">
+    <tr>
+        <td><h3>All Event</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="event in events">
+        <td>{{event.Title}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewEvent({id:event._id})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteEvent(event)">Delete</a>
+        </td>
+    </tr>
+</table>
+
+</br>
+</br>
+<a ui-sref="newEvent" class="btn-primary btn-lg nodecoration">Add New Event</a>

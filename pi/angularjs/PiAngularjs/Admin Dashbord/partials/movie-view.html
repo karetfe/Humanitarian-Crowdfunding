@@ -1,0 +1,20 @@
+<table class="table movietable">
+    <tr>
+        <td><h3>Details for {{event.Title}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Movie Title</td>
+        <td>{{event.Title}}</td>
+		<td>{{event.Description}}</td>
+		<td>{{event.Starting_Date}}</td>
+		<td>{{event.Price}}</td>
+
+    </tr>
+    
+  
+  
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editEvent({id:event._id})">Edit</a>
+</div>

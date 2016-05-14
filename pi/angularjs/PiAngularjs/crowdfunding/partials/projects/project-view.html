@@ -1,0 +1,123 @@
+<section class="gray">
+    <article class="container project-single">
+      <div class="row about-project">
+        
+        <!-- ************************ Left Side Area ************************ -->
+        
+        <div class="col-lg-8">
+          
+          <!-- ************************ Project Gallery ************************ -->
+        
+          <div class="pslider">
+            <div class="slide"><img src="assets/images/projects/singe-1.jpg" alt="img" /></div>
+          </div>
+          
+          <div class="pcontent">
+              <div class="tab-pane active" id="about-project">
+                  <h5><i class="fa fa-tags"></i>Title</h5>
+            <div style="text-align:center;"><p type="text" class="btn btn-3 green" style="margin:10px 0px 5px 0px;">{{project.title}}</p></div>
+                    
+                  <h5><i class="fa fa-tags"></i>Description</h5>
+                  <p>{{project.description}}</p>
+					
+                  <h5><i class="fa fa-tags"></i>Video</h5>
+                  <div class="videoWrapper">
+                    
+                      <youtube-video video-id='project.videoUrl'></youtube-video>
+                  </div>
+                  
+                  <h5><i class="fa fa-tags"></i>Deadline</h5>
+                    <p>{{project.deadLine}}</p>
+                  
+                  <h5><i class="fa fa-tags"></i>UserName</h5>
+                    <p>{{project.Username}}</p>
+                  
+                <h5><i class="fa fa-tags"></i>UserTel</h5>
+                    <p>{{project.UserTel}}</p>
+                  
+                  
+                </div>
+              
+           
+                
+              
+                  <div class="tab-pane costs-detail" id="costs">
+                  <h5><i class="fa fa-tags"></i>Costs</h5>
+                  <div class="cost-total">Total <span>{{project.amount}} <span>Dt</span></span></div>
+                  <div id="total-barChart"><!--Total cost bar chart--></div>
+                </div>
+
+              <h5><i class="fa fa-tags"></i>Map</h5></br>
+              <ng-map zoom="11" center="[{{project.lat}}, {{project.lon}}]">
+                <marker position="[{{project.lat}}, {{project.lon}}]" />
+                <shape name="circle" radius="400" center="[{{project.lat}}, {{project.lon}}]" radius="4000" />
+                <control name="overviewMap" opened="true" />
+                </ng-map>
+          </div>
+        </div>
+        
+        <!-- ************************ Right Side Area ************************ -->
+        
+        <div class="col-lg-4">
+          <div class="sidebar">
+            
+            
+            
+
+            
+            
+            
+            <!-- Find This Project -->
+            
+            <div class="sidebar-item">
+              <div class="w-title">Find This Project On</div>
+              <div class="find-project">
+                <ul>
+                  <li><a target="_blank" href="{{project.facebookUrl}}" class="fb transition-all" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a target="_blank" href="{{project.YoutubeUrl}}" class="tw transition-all" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a target="_blank" href="{{project.TwitterUrl}}" class="yt transition-all" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+                
+            </div>
+            <div class="sidebar-item">
+              <div class="w-title">Donate</div>
+              <div class="find-project">
+<center>
+                                <!-- paypall donation -->
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="YG76AZRZQCV2A">
+<table>
+<tr><td><input type="hidden" name="on0" value="choose :">choose :</td></tr><tr><td><select name="os0">
+	<option value="donate :">donate : $20.00 USD</option>
+	<option value="donate :">donate : $50.00 USD</option>
+	<option value="donate :">donate : $100.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/fr_XC/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/fr_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+ </center>         
+               <!-- paypall donation -->
+              </div>
+                
+            </div>
+
+            
+          </div>
+        </div> 
+               
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Send your idea ************************ -->
+  
+  <section class="send-us">
+    <article class="container">
+      <h3>Have a Community Project in Need of Funding?</h3>
+      <a ui-sref="newProject" class="btn btn-3 green">Send to us</a>
+    </article>
+  </section>

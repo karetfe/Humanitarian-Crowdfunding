@@ -1,0 +1,46 @@
+    <div class="container">
+      <div id="logo">
+        <a ui-sref="home"><img src="assets/images/logo.png" alt="Fundz" /></a>
+        <button type="button" class="collapsed" id="navbar-toggle"><i class="icon fa fa-bars"></i></button>
+      </div>
+      <div class="nav-header-right">
+        <nav class="main-nav">
+          <ul>
+
+                <li><a ui-sref="projects" translate="hea"></a><a><span translate="heae"></span></a></li>
+               <li ng-show="token"><a ui-sref="newProject" translate="st"></a><a> <span translate="mai"></span></a></li>
+                <li><a ui-sref="events" translate="ev"></a><a><span translate="joi"></span></a></li>
+                <li><a ui-sref="faqs">Faq'S </a><a><span translate="qu"></span></a></li>
+                <li><a ui-sref="successstorys" translate="suc"></a><a><span translate="ss"></span></a></li>
+                <li><a ui-sref="about" translate="ab"> </a><a><span translate="wa"></span></a></li>   
+
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="header-right-btns">
+            <ul>
+                 <li>
+                <img src="assets/images/anglais.png" alt="" class="" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"/>
+                <img src="assets/images/france.png" alt="" class="" ng-click="changeLanguage('fr')" translate="BUTTON_LANG_FR"/>
+                </li>   
+              <li ng-show="!token" class="login-panel">
+                <a ui-sref="login">Login</a><span>Or</span>
+                
+              </li>
+            <li ng-show="token" class="login-panel">
+                <a ui-sref="profile">Profile</a><span>Or</span>
+                
+              </li>
+            <li ng-show="!token" ><a ui-sref="register" class="btn btn-4 blue">Join</a></li>
+            <li ng-show="token" ><a ui-sref="logout" class="btn btn-4 blue">Logout</a></li>
+            </ul>
+          </div>
+          <div class="search-box border-right">
+            <form method="get" action="index.html">
+              <input type="text" value="Search Here" name="s" id="keyword">
+              <span class="icon fa fa-search transition-color" title="Search"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

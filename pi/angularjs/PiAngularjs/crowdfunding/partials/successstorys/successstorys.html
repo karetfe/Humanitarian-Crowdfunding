@@ -1,0 +1,61 @@
+  <!-- ************************ Header Bottom | Page Title ************************ -->
+  <section class="header-bottom">
+    <article>
+      <div class="container"><h1><p translate="suc"></p></h1></div>
+    </article>
+  </section>
+  <!-- ************************ Breadcrumbs ************************ -->
+  <section class="breadcrumb">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><span class="fa fa-home"></span>&nbsp;<span translate="you"></span></li>
+            <li><a ui-sref="home">Home</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li><span translate="suc"></span></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Page Content ************************ -->
+  <section class="gray">
+    <article class="container projects-page" id="popular">
+      <div class="row">
+        
+        <!-- ************************ Left Side Area ************************ -->
+        
+        <div class="col-lg-9 content-cnts">
+         
+            
+      <marquee behavior="alternate"><h3><b><p translate="qj"></p></b></h3></marquee>
+     <br>
+    <div class="blog-single">
+    
+     <div class="blog-description ul-content">
+         
+    <table ng-repeat="successstory in successstorys">
+        <tr><figure><img src="../../assets/images/med.png" alt="img" /></figure>  </tr>
+        <tr>
+       <td><h4><b><i translate="test"> {{successstory.Title}} </i></b></h4></td>
+       </tr>
+        <br>  
+    <tr>       
+        <td> <p translate="desc"> {{successstory.Description}} </p></td>
+    </tr>
+         <br>     
+    <tr>    
+        <td><b> Source : </b><i translate="source">{{successstory.Source}} </i></td>
+    </tr>
+        <!--<td>
+            <a class="btn btn-primary" ui-sref="viewSuccessstory({id:successstory._id})">View</a>
+        </td>-->
+   
+</table>
+</div>
+</div>
+</div>
+</div></article>
+ </section>

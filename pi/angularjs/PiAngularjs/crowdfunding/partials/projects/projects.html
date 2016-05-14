@@ -1,0 +1,107 @@
+  <!-- ************************ Header Bottom | Page Title ************************ -->
+  <section class="header-bottom">
+    <article>
+      <div class="container"><h1>Projects</h1></div>
+    </article>
+  </section>
+  <!-- ************************ Breadcrumbs ************************ -->
+  <section class="breadcrumb">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+            <li><a ui-sref="home">Home</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li>Projects</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Page Content ************************ -->
+<section class="gray">
+    <article class="container projects-page" id="popular">
+      <div class="row">
+        
+        <!-- ************************ Left Side Area ************************ -->
+        
+        <div class="col-lg-9 content-cnt">
+            <div  ng-repeat="project in projects">
+          <div class="col-lg-4 project-cnt">
+            <div class="popular-item">
+              <figure class="project-image">
+                <figcaption><a ui-sref="viewProject({id:project._id})">View Details</a></figcaption>
+                <img src="assets/images/popular_1.jpg" alt="img" />
+              </figure>
+              <div class="popular-content">
+                <div class="project-desc">
+                  <h5><a href="#">{{project.title}}<span class="line-yellow"></span></a></h5>
+                  <p>{{project.description}}</p>
+                </div>
+                <div class="popular-data"> 
+                  <div class="pie_progress" role="progressbar" data-goal="70" data-barcolor="#f2d031" data-barsize="7.1">
+                  </div>
+                     <!-- paypall donation -->
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="YG76AZRZQCV2A">
+<table>
+<tr><td><input type="hidden" name="on0" value="choose :">choose :</td></tr><tr><td><select name="os0">
+	<option value="donate :">donate : $20.00 USD</option>
+	<option value="donate :">donate : $50.00 USD</option>
+	<option value="donate :">donate : $100.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/fr_XC/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/fr_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+          
+               <!-- paypall donation -->
+                </div>
+
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+                
+          </div>
+          <div class="clear"></div>
+          
+          <div ng-show="token" class="popular-btn"> <a ui-sref="newProject">Add New Project</a> </div> 
+        </div>
+        
+        <!-- ************************ Right Side Area ************************ -->
+        
+        <div class="col-lg-3 sidebar-container">
+          <div class="sidebar">
+          
+
+          
+            <div class="sidebar-item">
+              <div class="w-title">Categories</div>
+              <div class="w-content popular-categories">
+                <ul>
+                  <li><a ui-sref="searchbycat({cat:'Children'})"><span><i class="icon-animals"></i></span>Children</a></li>
+                  <li><a ui-sref="searchbycat({cat:'Community'})"><span><i class="icon-community"></i></span>Community</a></li>
+                  <li><a ui-sref="searchbycat({cat:'Emergencies'})"><span><i class="icon-dance"></i></span>Emergencies</a></li>
+                  <li><a ui-sref="searchbycat({cat:'Humanitarian'})"><span><i class="icon-design"></i></span>Humanitarian</a></li>
+                  <li><a ui-sref="searchbycat({cat:'Education'})"><span><i class="icon-education"></i></span>Education</a></li>
+                  <li><a ui-sref="searchbycat({cat:'Environment'})"><span><i class="icon-environment"></i></span>Environment</a></li>
+                  <li><a ui-sref="searchbycat({cat:'Food'})"><span><i class="icon-food"></i></span>Food</a></li>
+                  <li><a ui-sref="searchbycat({cat:'Health'})"><span><i class="icon-health"></i></span>Health</a></li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </article>
+  </section>

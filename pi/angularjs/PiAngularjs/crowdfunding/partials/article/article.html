@@ -1,0 +1,227 @@
+
+  
+  <!-- ************************ Header Bottom | Page Title ************************ -->
+  <section class="header-bottom">
+    <article>
+      <div class="container"><h1>Article</h1></div>
+    </article>
+  </section>
+  <!-- ************************ Breadcrumbs ************************ -->
+  <section class="breadcrumb">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+            <li><a href="index.html">Home</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li>Article</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Page Content ************************ -->
+  <section class="gray">
+    <article class="container projects-page" id="popular">
+      <div class="row">
+        
+        <!-- ************************ Left Side Area ************************ -->
+        
+        <div class="col-lg-9 content-cnts">
+          <div class="blog-single">
+            <figure>
+              <img src="../../assets/images/blog/pauvrete.jpg" alt="img" />
+                <img src="../../assets/images/blog/"
+            </figure>
+            <div class="blog-byDate">
+              <ul>
+                <li><i class="fa fa-user"></i> Slim Ben Fdhila</li>
+                <li><i class="fa fa-calendar"></i> 17 Aug 2015</li>
+                <li><i class="fa fa-comments"></i> 23 Comments</li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+            
+            <div class="blog-description ul-content">
+              <h3>Poverty and Inequality in
+Tunisia</h3>
+              <p>The low absolute poverty rate of
+North-African countries is often used to
+demonstrate the pertinence of their economic
+model. However, even if the poverty rate is
+accepted as a good metric for the social
+achievements of a government, its pattern
+at the country level may mask important
+variations in the regional poverty rates.
+Indeed, policymakers have several reasons
+to be concerned about development
+disparities between regions.</p>
+             
+              <blockquote><i class="fa fa-quote-left"></i>Poverty is the worst form of violence. 
+― <b>Mahatma Gandhi</b>.</blockquote>
+              <p>First, an unequal distribution in the
+regional poverty rates means that growth
+benefits do not flow equally across the
+different regions and this is a legitimate
+policy concern in itself. Indeed, a policy
+which discriminates across regions
+(or is perceived as such) is liable to create
+resentment and insecurity, possibly
+leading to social instability. This is
+supported by the socio-psychological
+literature which shows that the perception
+of exclusion from social consumption
+norms have an impact both on social
+cohesion and welfare.</p>
+            
+              
+              <p>Second, fighting regional poverty
+differences and regional inequalities
+may be another dimension through
+which policymakers can guarantee
+social cohesion.</p>
+              <p>In placerat elementum sapien, vel lobortis arcu fringilla a. Proin vitae nulla in enim elementum rutrum quis id tortor. Ut orci ante, sollicitudin et nunc nec, posuere gravida metus.</p>
+              <p>Third, even if equalizing the poverty
+level across regions is not a policy goal,
+understanding the marked and persistent
+differences in the regional poverty
+statistics can shed light on the factors
+contributing to the overall poverty rate and
+thus determine the priorities that need
+to be undertaken to support regional
+development.</p>
+                
+              <div ng-controller='FeedCtrl'>
+<div ng-repeat="feed in feeds | orderBy:'title'">
+	<h2><a href="{{feed.link}}" target="_blank">{{feed.title}}</a></h2>
+	<p><span ng-repeat="item in feed.entries">
+		<a href="{{item.link}}" target="_blank">{{item.title}}</a> <br />
+        <a href="{{item.description}}" target="_blank">{{item.description}}</a> <br />
+	</span></p>
+</div>
+</div>
+              <p>&nbsp;</p>
+              <div class="blog-comments">
+                <h6><i class="fa fa-comments"></i> Comments</h6>
+                <div class="detailBox">
+                    <div class="actionBox">
+                      <ul class="commentList">
+                        <li>
+                          <div class="commenterImage"><img src="../../assets/images/funder_1.jpg" alt="Funder"></div>
+                          <div class="commentText">
+                            <p class="">True story</p> <span class="date sub-text">on July 24th, 2015</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="commenterImage"><img src="../../assets/images/under_2.jpg" alt="Funder"></div>
+                          <div class="commentText">
+                            <p class="">I feel sad.</p> <span class="date sub-text">on July 24th, 2015</span>
+                          </div>
+                        </li>
+                       
+                      </ul>
+                      <p>&nbsp;</p>
+                      <h6>Leave A Reply</h6>
+                      <form class="form-inline" action="blog-single.html">
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Your Email" />
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" placeholder="Your Comments"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <button type="button" class="btn btn-5 blue">Add Comment</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        
+        <!-- ************************ Right Side Area ************************ -->
+        
+        <div class="col-lg-3 sidebar-container">
+          <div class="sidebar">
+                    
+            <div class="sidebar-item">
+              <div class="w-title">Popular Posts</div>
+              <div class="w-content">
+                <ul class="popular-posts-widget">
+                  <li>
+                    <figure>
+                      <a href="#">
+                        <img src="../../assets/images/blog/fa9er1.png" alt="Blog Post" />
+                      </a>
+                        <figcaption><a>Curabitur suscipit euismod felis <span><i class="fa fa-calendar"></i> 17 Aug 2015</span></a></figcaption>
+                    </figure>
+                    <span class="clear"></span>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="#">
+                        <img src="../../assets/images/blog/fa9er2.png" alt="Blog Post" />
+                      </a>
+                        <figcaption><a href="#">Sed sollicitudin laoreet dapibus <span><i class="fa fa-calendar"></i> 17 Aug 2015</span></a></figcaption>
+                    </figure>
+                    <span class="clear"></span>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="#">
+                        <img src="../../assets/images/blog/fa9er3.png" alt="Blog Post" />
+                      </a>
+                        <figcaption><a href="#">Ut a lacinia metus <span><i class="fa fa-calendar"></i> 17 Aug 2015</span></a></figcaption>
+                    </figure>
+                    <span class="clear"></span>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          
+            <div class="sidebar-item">
+              <div class="w-title">Popular Categories</div>
+              <div class="w-content">
+                <ul class="popular-cat-widget">
+                  <li><a href="#">Children</a></li>
+                    <li><a href="#">Family</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Emergencies</a></li>
+                  <li><a href="#">Health</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            
+       
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </article>
+  </section>
+  
+  <!-- ************************ Send your idea ************************ -->
+  
+  <section class="send-us">
+    <article class="container">
+      <h3>Have a Community Project in Need of Funding?</h3>
+      <a href="start.html" class="btn btn-3 green">Send to us</a>
+    </article>
+  </section>
+  
+  <!-- ************************ Footer ************************ -->
+  

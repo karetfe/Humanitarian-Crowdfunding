@@ -1,0 +1,9 @@
+
+<h3><b>All Success Stories</b></h3>   
+<div >
+<table ng-repeat="successstory in successstorys">
+<tr><td><h4><b>Title:{{successstory.Title}} </b></h4></td></tr><br>
+<tr><td><b>Source :</b>{{successstory.Source}}</td></tr>
+<tr><td><a class="btn btn-primary" ui-sref="viewSuccessstory({id:successstory._id})">View</a><a class="btn btn-danger" ng-click="deleteSuccessstory(successstory)">Delete</a></td></tr> 
+</table></div><br>
+<a ui-sref="newSuccessstory" class="btn-primary btn-lg nodecoration">Add New Success Story</a>

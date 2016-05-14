@@ -1,0 +1,62 @@
+  <!-- ************************ Header Bottom | Page Title ************************ -->
+  <section class="header-bottom">
+    <article>
+      <div class="container"><h1>Events</h1></div>
+    </article>
+  </section>
+  <!-- ************************ Breadcrumbs ************************ -->
+  <section class="breadcrumb">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+            <li><a ui-sref="home">Home</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li>Events</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Page Content ************************ -->
+
+<div class="container" ng-repeat="event in events" >
+    <ul class="list-group">
+    <li>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="panel-info">
+                    <p><h3><strong>{{event.Title}}</strong></h3></p>
+                    <p><h3>{{event.Price}}</h3><br />
+                        <h3>{{event.Description}}</h3><br />
+                      <h3>{{event.Starting_Date}}</h3> .</p>
+                </div>
+                <div class="panel-rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <p>Rate Yourself!</p>
+                </div>
+                <div class="panel-more1">
+                    <img src="http://lorempixel.com/100/100" />
+                    <br /><span>Caption</span>
+                </div>
+                <div class="panel-more1">
+                    <img src="http://lorempixel.com/100/100" />
+                    <br /><span>Caption</span>
+                </div>
+                
+            </div>
+              <figure class="project-image">
+                <figcaption><a ui-sref="viewEvent({id:event._id})">View Details</a></figcaption>
+                 
+              </figure>
+        </div>
+       
+    </li>
+  
+   
+</ul>
+</div>
+       

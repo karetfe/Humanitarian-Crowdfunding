@@ -1,0 +1,149 @@
+ <section class="gray">
+    <article class="container">
+        <!-- ************************ Form Area Start ************************ -->
+      
+      <div class="start-project">
+        <div class="title">
+          <ul>
+            <li data-link="basic-data" class="current"><a href="#"><i class="fa fa-pagelines"></i><span>Baisc Information</span></a></li>
+            <li data-link="social-media" class=""><a href="#"><i class="fa fa-link"></i><span>Social Media</span></a></li>
+            <li data-link="add-perks" class=""><a href="#"><i class="fa fa-tags"></i><span>Region</span></a></li>
+            
+          </ul>
+        </div>
+        <hr>
+        <div class="start-content">
+          <form action="start.html" method="post" enctype="multipart/form-data">
+            
+            <div id="basic-data" class="form-wizard active">
+           	            
+              <div class="form-group">
+                <div class="form-left">
+                  <input type="text" value="" ng-model="project.title" class="form-control" placeholder="Project Title" >
+                </div>
+                <div class="form-right">
+                  <input type="number" value="" ng-model="project.amount" class="form-control" placeholder="Amount You Want To Raise" >
+                </div>
+                <div class="clear"></div>
+              </div>
+            
+              <div class="form-group">
+                <div class="form-left">
+                  <input type="text" value="" ng-model="project.tagline" class="form-control" placeholder="Project Tagline" >
+                </div>
+                <div class="form-right">
+                  <select  ng-model="project.category" class="form-control arrow-down" >
+                    <option value="">Select A Category</option>
+                    <option value="Children">Children</option>
+                    <option value="Community">Community</option>
+                    <option value="Emergencies">Emergencies</option>
+                    <option value="Humanitarian">Humanitarian</option>
+                    <option value="Education">Education</option>
+                    <option value="Environment">Environment</option>
+                    <option value="Food">Food</option>
+                    <option value="Health">Health</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            
+              <div class="form-group">
+                <div class="form-left">
+                  <input type="date" value="" ng-model="project.deadLine" class="form-control" placeholder="Deadline - Funding ends" >
+                </div>
+                <div class="clear"></div>
+              </div>
+              
+              <div class="form-group">
+                <textarea  ng-model="project.description" class="form-control" placeholder="Project Description"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="form-left">
+                  <input type="text" value="" ng-model="project.Username" class="form-control" placeholder="UserName" >
+                </div>
+                <div class="form-right">
+                  <input type="text" value="" ng-model="project.UserTel" class="form-control" placeholder="UserTel" >
+                </div>
+                <div class="clear"></div>
+              </div>    
+              
+              <div class="next-btn"><button type="button" class="btn btn-4 blue" data-link="social-media" onClick="moveform(this,'social-media')">Next</button></div>
+              
+            </div>
+            
+            <div id="social-media" class="form-wizard">
+              
+              <div class="form-group">
+                <div class="form-left">
+                  <input type="text" value="" ng-model="project.facebookUrl" class="form-control" placeholder="Facebook Url" >
+                </div>
+                <div class="form-right">
+                  <input type="text" value="" ng-model="project.TwitterUrl" class="form-control" placeholder="Twitter Url" >
+                </div>
+                <div class="clear"></div>
+              </div>
+              
+              <div class="form-group">
+                <div class="form-left">
+                  <input type="text" value="" ng-model="project.YoutubeUrl" class="form-control" placeholder="Youtube Url" >
+                </div>
+                <div class="form-right">
+                  <input type="text" value="" ng-model="project.videoUrl" class="form-control" placeholder="Video Url" >
+                </div>
+                <div class="clear"></div>
+              </div>
+              
+              <div class="next-btn">
+                <button type="button" class="btn btn-5 blue" data-link="basic-data" onClick="moveform(this,'basic-data')">Back</button>
+                <button type="button" class="btn btn-4 blue" data-link="add-perks" onClick="moveform(this,'add-perks')">Next</button>
+              </div>
+            </div>
+            
+            <div id="add-perks" class="form-wizard">
+              <div id="perk-elements">
+            <div >
+                   <ng-map zoom="11" center="[{{project.lat}}, {{project.lon}}]">
+                        <marker position="[{{project.lat}}, {{project.lon}}]" draggable="true" on-dragend="getCurrentLocation($event)"  />
+                       <shape name="circle" radius="400" center="[{{project.lat}}, {{project.lon}}]" radius="4000" />
+                        <control name="overviewMap" opened="true" />
+                </ng-map>
+              </div>      
+               <div class="form-group">
+                <div class="form-left">
+                  <input type="text" value="" ng-model="project.lat" class="form-control" placeholder="Latitude"  />
+                </div>
+                <div class="form-right">
+                  <input type="text" value="" ng-model="project.lon" class="form-control"  placeholder="Longitude" >
+                </div>
+                <div class="clear"></div>
+              </div>
+                  <div class="form-group">
+                   <div class="form-left">
+                    <input type="text" value="" ng-model="project.region" class="form-control" placeholder="Region" >
+                  </div>
+                  <div class="clear"></div>
+                </div>
+
+              </div>
+
+              <div class="next-btn">
+                <button type="button" class="btn btn-5 blue" data-link="social-media" onClick="moveform(this,'social-media')">Back</button>
+                <button type="submit" _ class="btn btn-4 blue">Submit</button>
+                <div class="clear"></div>
+              </div>
+            </div>
+            
+            
+            
+          </form>
+        </div>
+      </div>
+      
+      <!-- ************************ Form Area End ************************ -->
+       </article>
+  </section>
+<section class="map-container">
+
+
+
+ </section>

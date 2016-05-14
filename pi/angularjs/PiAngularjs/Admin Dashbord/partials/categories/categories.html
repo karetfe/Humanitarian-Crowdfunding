@@ -1,0 +1,15 @@
+
+<table class="table movietable">
+    <tr>
+        <td><h3>All Categories</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="category in categories">
+        <td>{{category.name}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewCategory({id:category._id})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteCategory(category)">Delete</a>
+        </td>
+    </tr>
+</table>
+<a ui-sref="newCategory" class="btn-primary btn-lg nodecoration">Add New Category</a>

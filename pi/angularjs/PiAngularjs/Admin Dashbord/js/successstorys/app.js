@@ -1,0 +1,23 @@
+angular.module('piWebApp',['ui.router','ngResource','piWebApp.controllers','piWebApp.services']);
+
+angular.module('piWebApp').config(function($stateProvider,$httpProvider){
+    $stateProvider.state('successstorys',{
+        url:'/successstorys',
+        templateUrl:'partials/successstorys/successstorys.html',
+        controller:'SuccessstorysListController'
+    }).state('viewSuccessstory',{
+       url:'/successstorys/:id/view',
+       templateUrl:'partials/successstorys/successstorys-view.html',
+       controller:'SuccessstorysViewController'
+    }).state('newSuccessstory',{
+        url:'/successstorys/new',
+        templateUrl:'partials/successstorys/successstorys-add.html',
+        controller:'SuccessstorysCreateController'
+    }).state('editSuccessstory',{
+        url:'/successstorys/:id/edit',
+        templateUrl:'partials/successstorys/successstorys-edit.html',
+        controller:'SuccessstorysEditController'
+    });
+}).run(function($state){
+   $state.go('successstorys');
+});
